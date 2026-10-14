@@ -1,0 +1,577 @@
+/* ========================================
+   THIRUMALA SELECTIONS
+   Women's Festival Collection
+   Main Stylesheet
+   ======================================== */
+
+
+/* ---------- Color Variables ---------- */
+
+:root {
+    --maroon: #5b0f18;
+    --gold: #b8862c;
+    --cream: #fbf4e7;
+    --ink: #2b1a18;
+    --light: #e5d6c0;
+}
+
+
+/* ---------- Basic Reset ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ---------- Body ---------- */
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: Georgia, serif;
+    line-height: 1.6;
+}
+
+
+/* ---------- Top Bar ---------- */
+
+.top-bar {
+    background: var(--maroon);
+    color: #f8e6b5;
+    text-align: center;
+    padding: 8px;
+    letter-spacing: 1px;
+    font: 13px Arial, sans-serif;
+}
+
+
+/* ---------- Header ---------- */
+
+.header {
+    background: #fffaf2;
+    padding: 22px 6%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light);
+}
+
+
+/* ---------- Brand ---------- */
+
+.brand {
+    min-width: 190px;
+}
+
+.brand-main {
+    font-size: 32px;
+    color: var(--maroon);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.brand-sub {
+    text-align: center;
+    color: var(--gold);
+    font: 12px Arial, sans-serif;
+    letter-spacing: 5px;
+}
+
+
+/* ---------- Search ---------- */
+
+.search-box {
+    flex: 1;
+    max-width: 520px;
+    border: 1px solid #d9c4a2;
+    border-radius: 28px;
+    padding: 13px 18px;
+    color: #806d63;
+    background: #fff;
+    font: 14px Arial, sans-serif;
+}
+
+
+/* ---------- Cart ---------- */
+
+.cart {
+    color: var(--maroon);
+    font: bold 15px Arial, sans-serif;
+    white-space: nowrap;
+}
+
+
+/* ---------- Navigation ---------- */
+
+.navbar {
+    background: var(--maroon);
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 13px;
+    font: 14px Arial, sans-serif;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #f2d38b;
+}
+
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    text-align: center;
+    padding: 50px 20px 38px;
+    background: linear-gradient(
+        #f1dfc4,
+        #fff9ef
+    );
+}
+
+
+/* ---------- Small Hero Text ---------- */
+
+.hero-small {
+    color: var(--gold);
+    letter-spacing: 4px;
+    font: 12px Arial, sans-serif;
+}
+
+
+/* ---------- Main Hero Heading ---------- */
+
+.hero h1 {
+    margin: 12px 0 8px;
+    color: var(--maroon);
+    font-size: 46px;
+}
+
+
+/* ---------- Hero Description ---------- */
+
+.hero-description {
+    color: #735f54;
+    font-size: 16px;
+}
+
+
+/* ---------- Main Content ---------- */
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+    padding: 0 22px;
+}
+
+
+/* ---------- Breadcrumb ---------- */
+
+.breadcrumb {
+    padding-top: 25px;
+    color: #806d63;
+    font: 14px Arial, sans-serif;
+}
+
+
+/* ---------- Collection Header ---------- */
+
+.collection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.collection-header h2 {
+    color: var(--maroon);
+    font-size: 27px;
+    margin: 0;
+}
+
+.collection-header p {
+    color: #806d63;
+    font: 14px Arial, sans-serif;
+}
+
+
+/* ---------- Product Grid ---------- */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding-bottom: 60px;
+}
+
+
+/* ---------- Product Card ---------- */
+
+.product-card {
+    background: white;
+    border: 1px solid var(--light);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px #5b0f1812;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px #5b0f1820;
+}
+
+
+/* ---------- Product Image ---------- */
+
+.product-image {
+    aspect-ratio: 3 / 4;
+    background: #efe3d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+/* ---------- Clickable Image Area ---------- */
+
+.product-image a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ---------- Product Image Fitting ---------- */
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* ---------- Placeholder ---------- */
+
+.product-image span {
+    text-align: center;
+    color: #806d63;
+    font: 13px Arial, sans-serif;
+    padding: 20px;
+}
+
+
+/* ---------- Product Information ---------- */
+
+.product-info {
+    padding: 18px;
+}
+
+
+/* ---------- Design Number ---------- */
+
+.design-number {
+    font: 11px Arial, sans-serif;
+    letter-spacing: 1.5px;
+    color: var(--gold);
+    margin: 0;
+}
+
+
+/* ---------- Product Name ---------- */
+
+.product-info h3 {
+    font-size: 21px;
+    color: var(--maroon);
+    margin: 7px 0;
+}
+
+
+/* ---------- Product Details ---------- */
+
+.product-details {
+    font: 14px/1.8 Arial, sans-serif;
+    color: #65544c;
+}
+
+.product-details p {
+    margin: 0;
+}
+
+
+/* ---------- Price ---------- */
+
+.price {
+    margin: 13px 0;
+    font: 14px Arial, sans-serif;
+    color: #777;
+}
+
+
+/* ---------- Sizes ---------- */
+
+.sizes {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin: 10px 0 16px;
+}
+
+
+/* ---------- Individual Size ---------- */
+
+.size {
+    border: 1px solid #d8c5aa;
+    border-radius: 16px;
+    padding: 5px 10px;
+    font: 12px Arial, sans-serif;
+    background: #fffaf3;
+}
+
+
+/* ---------- Button ---------- */
+
+.view-details {
+    width: 100%;
+    border: 0;
+    border-radius: 24px;
+    padding: 12px;
+    background: var(--maroon);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.view-details:hover {
+    background: #741622;
+}
+
+
+/* ---------- Footer ---------- */
+
+.footer {
+    background: #3c0a10;
+    color: #f7e9c8;
+    text-align: center;
+    padding: 35px 20px;
+    font: 13px Arial, sans-serif;
+}
+
+.footer h3 {
+    display: block;
+    color: #f2d38b;
+    font: 25px Georgia, serif;
+    margin: 0 0 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 800px) {
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .search-box {
+        order: 3;
+        flex-basis: 100%;
+        max-width: none;
+    }
+
+    .navbar {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 520px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .brand-main {
+        font-size: 26px;
+    }
+}
+
+/* ========================================
+   PRODUCT DETAILS MODAL
+   ======================================== */
+
+.product-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(43, 26, 24, 0.75);
+    z-index: 1000;
+    padding: 30px 20px;
+    overflow-y: auto;
+}
+
+.product-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    background: #fffaf2;
+    border-radius: 12px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    color: var(--maroon);
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.close-modal:hover {
+    background: var(--maroon);
+    color: white;
+}
+
+.modal-image {
+    background: #efe3d2;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-image img {
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    object-fit: contain;
+}
+
+.modal-info {
+    padding: 45px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-info h2 {
+    color: var(--maroon);
+    font-size: 30px;
+    margin: 8px 0 25px;
+}
+
+.modal-details {
+    font: 15px/1.8 Arial, sans-serif;
+    color: #65544c;
+}
+
+.modal-details p {
+    margin: 5px 0;
+}
+
+.modal-note {
+    margin: 25px 0;
+    color: #735f54;
+    font: 14px/1.6 Arial, sans-serif;
+}
+
+.whatsapp-button {
+    width: 100%;
+    border: none;
+    border-radius: 26px;
+    padding: 14px 20px;
+    background: #25D366;
+    color: white;
+    font: bold 15px Arial, sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.whatsapp-button:hover {
+    background: #1da851;
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   MODAL RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 700px) {
+
+    .product-modal {
+        padding: 15px;
+    }
+
+    .product-modal-content {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .modal-image {
+        min-height: 350px;
+        max-height: 450px;
+    }
+
+    .modal-info {
+        padding: 30px 24px;
+    }
+
+    .modal-info h2 {
+        font-size: 25px;
+    }
+
+}
