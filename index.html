@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thirumala Selections — Women's Festival Collection</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        TRADITIONAL • FASHION • QUALITY
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="brand">
+            <div class="brand-main">THIRUMALA</div>
+            <div class="brand-sub">SELECTIONS</div>
+        </div>
+
+        <div class="search-box">
+            ⌕ Search in Festival Collection...
+        </div>
+
+        <div class="cart">
+            ♡ Cart (0)
+        </div>
+
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <a href="#">Home</a>
+        <a href="#">Women</a>
+        <a href="#">Festival Collection</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Contact</a>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-small">THIRUMALA SELECTIONS</p>
+
+            <h1>Women's Festival Collection</h1>
+
+            <p class="hero-description">
+                Elegant Kurta Sets • Selected for the festive season
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            Home › Festival Collection › Women's Kurta Sets
+        </div>
+
+        <!-- Collection Header -->
+        <div class="collection-header">
+
+            <div>
+                <h2>Women's Kurta Sets</h2>
+                <p>3 designs</p>
+            </div>
+
+        </div>
+
+        <!-- Product Grid -->
+        <section class="product-grid">
+
+            <!-- Product 1 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="images/design-0244.jpg"
+                        alt="Mal Chanderi Kurta Set"
+                        onclick="openImage(this.src)"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <p class="design-number">DESIGN 0244</p>
+
+                    <h3>Mal Chanderi Kurta Set</h3>
+
+                    <div class="product-details">
+                        <p><strong>Fabric:</strong> Mal Chanderi</p>
+                        <p><strong>Work:</strong> Dupatta Work</p>
+                        <p><strong>Sizes:</strong> L / XL / XXL</p>
+                    </div>
+
+                    <p class="price">Price to be added</p>
+
+                    <button
+                        class="view-details"
+                        onclick="openProduct(
+                            'Mal Chanderi Kurta Set',
+                            'DESIGN 0244',
+                            'Mal Chanderi',
+                            'Dupatta Work',
+                            'L / XL / XXL',
+                            'images/design-0244.jpg'
+                        )"
+                    >
+                        VIEW DETAILS
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 2 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="images/design-0104.jpg"
+                        alt="Vichitra Silk Kurta Set"
+                        onclick="openImage(this.src)"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <p class="design-number">DESIGN 0104</p>
+
+                    <h3>Vichitra Silk Kurta Set</h3>
+
+                    <div class="product-details">
+                        <p><strong>Fabric:</strong> Vichitra Silk</p>
+                        <p><strong>Work:</strong> Dupatta Work</p>
+                        <p><strong>Sizes:</strong> L / XL</p>
+                    </div>
+
+                    <p class="price">Price to be added</p>
+
+                    <button
+                        class="view-details"
+                        onclick="openProduct(
+                            'Vichitra Silk Kurta Set',
+                            'DESIGN 0104',
+                            'Vichitra Silk',
+                            'Dupatta Work',
+                            'L / XL',
+                            'images/design-0104.jpg'
+                        )"
+                    >
+                        VIEW DETAILS
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 3 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="images/design-0298.jpg"
+                        alt="Georgette Print Kurta Set"
+                        onclick="openImage(this.src)"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <p class="design-number">DESIGN 0298</p>
+
+                    <h3>Georgette Print Kurta Set</h3>
+
+                    <div class="product-details">
+                        <p><strong>Fabric:</strong> Georgette</p>
+                        <p><strong>Type:</strong> Print</p>
+                        <p><strong>Sizes:</strong> L / XL / XXL</p>
+                    </div>
+
+                    <p class="price">Price to be added</p>
+
+                    <button
+                        class="view-details"
+                        onclick="openProduct(
+                            'Georgette Print Kurta Set',
+                            'DESIGN 0298',
+                            'Georgette',
+                            'Print',
+                            'L / XL / XXL',
+                            'images/design-0298.jpg'
+                        )"
+                    >
+                        VIEW DETAILS
+                    </button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- Product Details Modal -->
+    <div id="productModal" class="product-modal">
+
+        <div class="product-modal-content">
+
+            <button class="close-modal" onclick="closeProduct()">
+                ×
+            </button>
+
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="">
+            </div>
+
+            <div class="modal-info">
+
+                <p id="modalDesign" class="design-number"></p>
+
+                <h2 id="modalName"></h2>
+
+                <div class="modal-details">
+
+                    <p>
+                        <strong>Fabric:</strong>
+                        <span id="modalFabric"></span>
+                    </p>
+
+                    <p>
+                        <strong>Work / Type:</strong>
+                        <span id="modalWork"></span>
+                    </p>
+
+                    <p>
+                        <strong>Sizes:</strong>
+                        <span id="modalSizes"></span>
+                    </p>
+
+                </div>
+
+                <p class="modal-note">
+                    Interested in this design? Contact us on WhatsApp for
+                    availability and order details.
+                </p>
+
+                <button
+                    class="whatsapp-button"
+                    onclick="orderOnWhatsApp()"
+                >
+                    ORDER ON WHATSAPP
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <h3>THIRUMALA SELECTIONS</h3>
+
+        <p>Chaitanya Nagar, Metpally</p>
+
+        <p>
+            Women's Festival Collection • Prices and stock will be added later
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
